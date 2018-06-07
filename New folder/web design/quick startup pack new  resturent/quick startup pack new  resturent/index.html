@@ -1,0 +1,757 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>WE HUNGRY</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/logo.png" >
+        <!-- Place favicon.ico in the root directory -->
+		
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/slicknav.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- Fixed navbar -->
+        <nav id="header" class="navbar navbar-fixed-top">
+            <div id="header-container" class="container navbar-container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="brand" class="navbar-brand" href="#"><img src="img/logo.png"</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">Menu</a></li>
+                        <li><a href="#about">Our Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div><!-- /.nav-collapse -->
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+
+ 
+<!--------------------------mrnu over------------------------- 
+--> 
+ 
+ 
+<!-----------------------------------------------slider---------------------------------------- 
+-->
+
+
+
+
+<div id="mycarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#mycarousel" data-slide-to="1"></li>
+    <li data-target="#mycarousel" data-slide-to="2"></li>
+    <li data-target="#mycarousel" data-slide-to="3"></li>
+    <li data-target="#mycarousel" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item">
+        <img src="img/pizza-2.jpg" alt="Special PIZZA" height="400px" width="100%">
+        <div class="carousel-caption">
+            <h3>Special PIZZA</h3>
+        </div>
+    </div>
+    <div class="item">
+        <img src="img/Chicken-Burger.jpg" data-color="firebrick" alt="Special BARGAR" height="400px" width="100%">
+        <div class="carousel-caption">
+            <h3>Special BARGAR</h3>
+        </div>
+    </div>
+    <div class="item">
+        <img src="img/23763716691_7d86f45e04_b.jpg" data-color="violet" alt="Special CUP CAKE" height="400px" width="100%">
+        <div class="carousel-caption">
+            <h3>Special CUP CAKE</h3>
+        </div>
+    </div>
+    <div class="item">
+        <img src="img/2-1.jpg" data-color="lightgreen" alt="Special PAN PIZZA" height="400px" width="100%">
+        <div class="carousel-caption">
+            <h3>Special PAN PIZZA</h3>
+        </div>
+    </div>
+    <div class="item">
+        <img src="img/01-Beach-Club-Restaurant.jpg" data-color="tomato" alt="OUR RESTURENT">
+        <div class="carousel-caption">
+            <h3>OUR RESTURENT</h3>
+        </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<script>
+    var $item = $('.carousel .item'); 
+var $wHeight = $(window).height();
+$item.eq(0).addClass('active');
+$item.height($wHeight); 
+$item.addClass('full-screen');
+
+$('.carousel img').each(function() {
+  var $src = $(this).attr('src');
+  var $color = $(this).attr('data-color');
+  $(this).parent().css({
+    'background-image' : 'url(' + $src + ')',
+    'background-color' : $color
+  });
+  $(this).remove();
+});
+
+$(window).on('resize', function (){
+  $wHeight = $(window).height();
+  $item.height($wHeight);
+});
+
+$('.carousel').carousel({
+  interval: 6000,
+  pause: "false"
+});
+</script>
+
+
+
+
+
+
+
+<!-- -------------------------------slider over-------------------------------
+--> 
+
+<!----------------------gallary-------------------
+-->
+
+
+<div class="portfolio">
+      <div class="container">
+            
+            <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3 text-center">  
+                        <h1><span class="ion-minus"></span>Our Specaility <span class="ion-minus"></span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus </p><br>
+                    </div> 
+            </div>  
+                
+            <div class="row">
+                
+                   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    				   
+                        <a href="#">
+    				   		<img class="img-rounded" src="img/maxresdefault (1).jpg" alt="" height="200px" width="200px">
+    				   	</a>
+                                                                                
+    				</div>
+    				
+    				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    				   
+    				   	<a href="#">
+    				     	<img class="img-rounded" src="img/pizza-2.jpg" alt="" height="200px" width="200px">
+    				   	</a>
+    						    					    				
+    				</div>
+    				
+    				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    				   
+    				   	<a href="#">
+    				   		<img class="img-rounded" src="img/4-9-chocolate-peanut-butter-cake.jpg" alt="" height="200px" width="200px">
+    				   	</a>
+    						    					    				
+    				</div>
+    				
+    				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    				   
+    				   	<a href="#">
+    				   		<img class="img-rounded" src="img/4242647-restaurant.jpg" alt="" height="200px" width="200px">
+    				   	</a>
+    						    					    				
+    				</div>
+                   
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    				   
+    				   	<a href="#">
+    				   		<img class="img-rounded" src="img/download.jpg" alt="" height="200px" width="200px">
+    				   	</a>
+    						    					    				
+    				</div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    				   
+    				   	<a href="#">
+    				   		<img class="img-rounded" src="img/download (1).jpg" alt="" height="200px" width="200px">
+    				   	</a>
+    						    					    				
+    				</div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    				   
+    				   	<a href="#">
+    				   		<img class="img-rounded" src="img/3-1.jpg" height="200px" width="200px">
+    				   	</a>
+    						    					    				
+    				</div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    				   
+    				   	<a href="#">
+    				   	    <img class="img-rounded"  src="img/4-1.jpg" height="200px" width="200px">
+    				   	</a>
+    						    					    				
+    				</div>
+                  
+            </div>  
+                
+    </div>
+</div>
+
+
+
+
+<!----------------------gallary over---------------------
+-->
+<!-- -----------------------------------our team-----------------------------
+--> 
+ 
+ 
+ 
+ 
+ 
+ 
+ <section class="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="col-lg-12">
+          <h6 class="description">OUR TEAM</h6>
+          <div class="row pt-md">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+              <div class="img-box">
+                <img src="img/team-3.jpg" class="img-responsive">
+                <ul class="text-center">
+                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                </ul>
+              </div>
+              <h1>Marrie Doi</h1>
+              <h2>Co-founder Chef</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+              <div class="img-box">
+                <img src="img/team-1.jpg" class="img-responsive">
+                <ul class="text-center">
+                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                </ul>
+              </div>
+              <h1>Christopher Di</h1>
+              <h2>Chef Projects</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+              <div class="img-box">
+                <img src="img/team-2.jpg" class="img-responsive">
+                <ul class="text-center">
+                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                </ul>
+              </div>
+              <h1>Heather H</h1>
+              <h2>Chef </h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+              <div class="img-box">
+                <img src="img/about-2.jpg" class="img-responsive">
+                <ul class="text-center">
+                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                </ul>
+              </div>
+              <h1>John Doe</h1>
+              <h2>Chef Designer</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- ---------------------------------team over------------------------------------
+--> 
+ 
+ 
+<!-- ------------------------------portfolio---------
+--> 
+ 
+ 
+ <div class="portfolio">
+      <div class="container">
+            
+            <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3 text-center">  
+                        <h1><span class="ion-minus"></span>Our Resturent Decoration<span class="ion-minus"></span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus </p><br>
+                    </div> 
+            </div>  
+                
+            <div class="row">
+                
+                   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    				   
+                        <a href="#">
+    				   		<img class="img-rounded" src="img/01-Beach-Club-Restaurant.jpg" alt="" height="200px" width="200px">
+    				   	</a>
+                                                                                
+    				</div>
+    				
+    				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    				   
+    				   	<a href="#">
+    				     	<img class="img-rounded" src="img/CroppedImage1600900-restaurant-alpenhof-zermatt.jpg" alt="" height="200px" width="200px">
+    				   	</a>
+    						    					    				
+    				</div>
+    				
+    				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    				   
+    				   	<a href="#">
+    				   		<img class="img-rounded" src="img/Interior-Decorative-Design-New-York-Terrace-Restaurant-HD-wallpaper.jpg" alt="" height="200px" width="200px">
+    				   	</a>
+    						    					    				
+    				</div>
+    				
+    				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    				   
+    				   	<a href="#">
+    				   		<img class="img-rounded" src="img/Restaurant-1.jpg" alt="" height="200px" width="200px">
+    				   	</a>
+    						    					    				
+    				</div>
+                   
+            </div>  
+                
+    </div>
+</div>
+ 
+ 
+<!-- -------------------------portfolio over------------
+--> 
+ 
+<!-- ---------------------------price card--------------------------
+--> 
+ 
+ 
+ 
+ 
+ <section id="prices">
+      <div class="container"> 
+      
+            <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3 text-center">  
+                        <h2><span class="ion-minus"></span>Our Special Offer Prices<span class="ion-minus"></span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus </p><br>
+                    </div> 
+            </div> 
+					
+
+		   <div class="prices-box">
+			  <div class="row">
+			 
+			   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pd0 price-table aos-init aos-animate" data-aos="fade-right">
+               
+					<div class="top-content text-center">
+                    
+						<div class="title">
+							<h3>FAMILY</h3>
+						</div>
+                        
+						<div class="price">
+							<span>$200</span>
+						</div>
+                        
+						<a class="btn btn-default" href="#">Order Now</a>
+                        
+					 </div>
+                     
+                     <div class="bottom-content text-center">
+						<ul class="features list-unstyled">
+							<li>2 Pages</li>
+							<li>10 GB Storage</li>
+							<li>100 GB Bandwidth</li>
+							<li> Support</li>
+						</ul>
+                     </div>
+                     
+				</div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pd0 price-table aos-init aos-animate" id="price2" data-aos="fade-up">
+               
+					<div class="top-content text-center">
+                    
+						<div class="title">
+							<h3>FRIENDS</h3>
+						</div>
+                        
+						<div class="price">
+							<span>$100</span>
+						</div>
+                        
+						<a class="btn btn-default" href="#">Order Now</a>
+                        
+					 </div>
+                     
+                     <div class="bottom-content text-center">
+						<ul class="features list-unstyled">
+							<li>10 Pages</li>
+							<li>20 GB Storage</li>
+							<li>200 GB Bandwidth</li>
+							<li>Limited Support</li>
+						</ul>
+                     </div>
+                     
+				</div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pd0 price-table aos-init aos-animate" data-aos="fade-left">
+               
+					<div class="top-content text-center">
+                    
+						<div class="title">
+							<h3>OFFICIAL</h3>
+						</div>
+                        
+						<div class="price">
+							<span>$300</span>
+						</div>
+                        
+						<a class="btn btn-default" href="#">Order Now</a>
+                        
+					 </div>
+                     
+                     <div class="bottom-content text-center">
+						<ul class="features list-unstyled">
+							<li>20 Pages</li>
+							<li>50 GB Storage</li>
+							<li>500 GB Bandwidth</li>
+							<li>UnlimitedSupport</li>
+						</ul>
+                     </div>
+                     
+				</div>
+               	
+			   </div> 
+			</div>  
+			
+		</div>
+	</section>
+ 
+ 
+ 
+ 
+<!-- ----------------------------price card over------------------
+-->   
+
+<!-------------------------------------count up-------------------
+-->
+
+
+        
+<div class="container">
+	<div class="row">                   
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                <span class="sr-only">60% Complete</span>
+            </div>
+            <span class="progress-type">OUR OFFICIAL CASTOMAR</span>
+            <span class="progress-completed">60%</span>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                <span class="sr-only">40% Complete (success)</span>
+            </div>
+            <span class="progress-type">OUR REGULAR CASTOMAR</span>
+            <span class="progress-completed">40%</span>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                <span class="sr-only">20% Complete (info)</span>
+            </div>
+            <span class="progress-type">LOCAL CASTOM</span>
+            <span class="progress-completed">20%</span>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                <span class="sr-only">60% Complete (warning)</span>
+            </div>
+            <span class="progress-type">SPECIAL CASTOMAR</span>
+            <span class="progress-completed">60%</span>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                <span class="sr-only">80% Complete (danger)</span>
+            </div>
+            <span class="progress-type">OCCATIONAL MANAGMENT </span>
+            <span class="progress-completed">80%</span>
+        </div>
+	</div>
+</div>        
+        
+
+<!----------------------------------------count up over------------------------
+-->
+
+
+
+<!---------------------------------------- circle slider--------------------------------
+-->
+
+
+
+<!--------------------------------------- circle slider over----------------------------------------
+-->
+
+
+<!--------------------------------------------google map----------------------------------
+-->
+
+<div class="container">
+	<div class="row-fluid">
+        <div class="span8">
+        	<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=15+Springfield+Way,+Hythe,+CT21+5SH&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed"></iframe>
+    	</div>
+    	
+      	<div class="span4">
+    		<h2>Snail mail</h2>
+    		<address>
+    			<strong>Hythe Window Cleaning</strong><br>
+    			15 Springfield Way<br>
+    			Hythe<br>
+    			Kent<br>
+    			United Kingdon<br>
+    			CT21 5SH<br>
+    			<abbr title="Phone">P:</abbr> 01234 567 890
+    		</address>
+    	</div>
+    </div>
+</div>
+
+
+<!------------------------------------------------google map over---------------------------------
+-->
+
+
+
+<!-----------------------------------------video------------------------------------------
+-->
+
+        <div class="container">
+            <div class="row mar-top-30">
+                <div class="col-sm-4">
+                    <div class="box text-center">
+                        <div class="incon-box">
+                            <i class="fa fa-truck" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="box-tittle">Free Shipping</h3>
+                        <p class="box-text">Free Shipping on All Oder $199</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box text-center">
+                        <div class="incon-box">
+                            <i class="fa fa-usd" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="box-tittle">Money Back</h3>
+                        <p class="box-text">100% Money Back Guarantee</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box text-center">
+                        <div class="incon-box">
+                            <i class="fa fa-yelp" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="box-tittle">Online Support</h3>
+                        <p class="box-text">Service Support First</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mar-top-30">
+                <div class="col-sm-4">
+                    <div class="box text-center">
+                        <iframe src="https://www.youtube.com/embed/nMBmLLpo9CA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                 <div class="col-sm-4">
+                    <div class="box text-center">
+                        <iframe  height="315" src="https://www.youtube.com/embed/mc3aTxClUAk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                 <div class="col-sm-4">
+                    <div class="box text-center">
+                    <iframe src="https://www.youtube.com/embed/R0g_9g9vb2A" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!--------------------------------------------video over-----------------------------------
+-->
+<!-----------------------footer-------------------
+-->
+
+    <div class="search-text"> 
+       <div class="container">
+         <div class="row text-center">
+         
+           <div class="form">
+               <h4>SIGN UP TO OUR NEWSLETTER</h4>
+                <form id="search-form" class="form-search form-horizontal">
+                    <input type="text" class="input-search" placeholder="Email Address">
+                    <button type="submit" class="btn-search">SUBMIT</button>
+                </form>
+            </div>
+        
+          </div>         
+       </div>     
+	</div>
+	
+    <footer>
+     <div class="container">
+       <div class="row">
+       
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <span class="logo"><img src="img/logo.png"</span>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="menu">
+                         <span>Menu</span>    
+                         <li>
+                            <a href="#">Home</a>
+                          </li>
+                               
+                          <li>
+                             <a href="#">About</a>
+                          </li>
+                               
+                          <li>
+                            <a href="#">Blog</a>
+                          </li>
+                               
+                          <li>
+                             <a href="#">Gallery </a>
+                          </li>
+                     </ul>
+                </div>
+           
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <ul class="address">
+                        <span>Contact</span>       
+                        <li>
+                           <i class="fa fa-phone" aria-hidden="true"></i> <a href="#">Phone</a>
+                        </li>
+                        <li>
+                           <i class="fa fa-map-marker" aria-hidden="true"></i> <a href="#">Adress</a>
+                        </li> 
+                        <li>
+                           <i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">Email</a>
+                        </li> 
+                   </ul>
+               </div>
+                                            <p class=" wow fadeInRight" data-wow-duration="1s" style="color:#FFFFFF;">Made with <i class="fa fa-heart"></i> by <a href="http://bootstrapthemes.co"></a>  ©  2018 . </br> <a href="#"> Fiverr account:https://www.fiverr.com/zannsha_jerin07 </a>
+											</br>Designed by:Zannsha_jerin 
+           
+           </div> 
+        </div>
+		
+
+
+    </footer>
+
+
+
+
+<!----------------------footer over-----------
+-->
+<!-- ---------------------------------------------------file finish----------------------
+--> 
+ 
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+        <script src="js/main.js"></script>
+		<script src="js/jquery.fitvids.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>
+		<script>
+		$('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
+		</script>
+		
+		
+		<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
